@@ -1,0 +1,10 @@
+.dockerignore
+.editorconfig
+.esformatter
+.git/
+.gitignore
+.npmignore
+coverage/
+Dockerfile
+node_modules/
+npm-debug.log
