@@ -1,0 +1,8 @@
+version: '2'
+services:
+  log-service:
+    build: .
+    image: appcelerator/amp-log-service
+    command: "npm test"
+    environment:
+      NODE_ENV: production
