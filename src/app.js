@@ -1,11 +1,11 @@
 import express from 'express'
-import logs from './lib/logs'
+import logApp from './lib/logApp'
 
 const app = express()
 
 export default app
 
-app.use(logs)
+app.use(logApp)
 
 app.listen(80)
 

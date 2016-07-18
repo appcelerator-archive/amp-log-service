@@ -1,3 +1,4 @@
+/* parse the docker log api output and format it */
 import bl from 'bl'
 import through from 'through2'
 

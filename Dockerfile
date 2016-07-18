@@ -1,7 +1,7 @@
-# Running docker-compose in alpine is a big pain
 FROM node:6.2-slim
 
-# install packages
+# install git to download dockerode since
+# the 1.12 api changes aren't published to npm
 RUN apt-get update
 RUN apt-get install -y git
 

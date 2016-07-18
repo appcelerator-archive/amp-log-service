@@ -1,3 +1,4 @@
+/* store and distrubute the logs */
 import EventEmitter from 'events'
 
 class LogStore extends EventEmitter {

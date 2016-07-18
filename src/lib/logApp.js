@@ -1,6 +1,7 @@
 /* eslint-disable no-console, babel/no-await-in-loop */
+/* serve logs to the browser */
+import capture from './capture'
 import express from 'express'
-import init from './init'
 import logStore from './logStore'
 
 const app = express()
@@ -27,4 +28,4 @@ function wrap (fn) {
   }
 }
 
-init.catch(error => console.error(error))
+capture.catch(error => console.error(error))
