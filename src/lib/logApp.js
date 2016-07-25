@@ -10,16 +10,7 @@ export default app
 
 app.get('/:service', wrap(async (req, res) => {
   const service = req.params.service
-  res.write('<pre>')
-  logStore.dump(service).forEach(writeLine)
-  logStore.on(service, writeLine)
-  setTimeout(() => {
-    logStore.removeListener(service, writeLine)
-    res.end('</pre>')
-  }, 1000 * (60 + 30))
-  function writeLine (line) {
-    res.write(line)
-  }
+  res.send('<pre>' + logStore.dump(service).join('') + '</pre>')
 }))
 
 function wrap (fn) {
