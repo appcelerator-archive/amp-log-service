@@ -1,3 +1,4 @@
+/* promisified Docker instance */
 import Container from 'dockerode/lib/container'
 import Docker from 'dockerode/lib/docker'
 import Exec from 'dockerode/lib/exec'

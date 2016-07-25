@@ -1,4 +1,5 @@
-import docker from './Docker'
+/* get services by service id */
+import docker from './docker'
 
 async function getServiceMap() {
   const services = await docker.listServicesAsync()
